@@ -5,7 +5,7 @@ import re
 # (jason['protocol']['title']) # access element in protocol by 
 
 
-search_for_protocol = 'Western Blot'
+search_for_protocol = 'Type Protocol Here'
 
 
 def search_page(string):

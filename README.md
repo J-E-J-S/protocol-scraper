@@ -23,9 +23,9 @@ This is a web scraper using the [Protocols.io API](https://apidoc.protocols.io/)
 search_for_protocol = 'Type protocol here'
 ```
 2. Run the script in an IDE or from the terminal 
- i. First navigate to the directory storing the ProtocolScraper.py script, then type 
+ * First navigate to the directory storing the ProtocolScraper.py script, then type 
 ``` 
 python ProtocolScraper.py 
 ``` 
 3. The script will generate 3 text files. Find the one with the best written protocol and stylise as desired. 
-	i. If some information is missing, following the url at the bottom of the file to see if you can fill in the details
+	* If some information is missing, following the url at the bottom of the file to see if you can fill in the details
