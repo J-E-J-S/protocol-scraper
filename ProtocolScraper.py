@@ -93,6 +93,11 @@ def single_translate_material(protocol):
 
 		count +=1 
 
+	if len(material_list) == 2: 
+		material_list.append('None') # checks to see if materials are included in protocol
+
+
+
 	return material_list
 
 def write_protocols(protocol_list):

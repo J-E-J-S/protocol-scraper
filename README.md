@@ -6,5 +6,4 @@ This is a web scraper using the [Protocols.io API](https://apidoc.protocols.io/)
 To-Do:
 -------
 * Add authors 
-* Add materials 
 
