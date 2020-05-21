@@ -1,0 +1,4 @@
+PCR
+1. Set up a small box with ice, put DNA and 2×high Taq Master Mix into it before going into the Bio-rad S1000TM thermocycler cycler.Set up a small box with ice, put DNA and 2×high Taq Master Mix into it before going into the Bio-rad S1000TM Thermo Cycler.
+2. Add the following reagent to a PCR tube.(50 ?l).  AB12×high Taq Master Mix (Enzyme)25 ?l2Template2 ?l3Forward Primer (10 ?M)2 ?l4Reverse Primer (10 ?M)2 ?l5ddH2O19 ?l6
+3. Program the thermocycler as follows:  AB1TemperatureTime298?5 min398?15 s4Tm-4?15 s572?(5-10s)× (1 kb)672?5 min74??

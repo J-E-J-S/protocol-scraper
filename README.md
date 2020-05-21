@@ -7,6 +7,4 @@ To-Do:
 -------
 * Add authors 
 * Add materials 
-* Fix persistant unicodeencodeerror with some protocols 
-
 

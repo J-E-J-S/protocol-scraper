@@ -1,10 +1,10 @@
 import requests
 import json
 import re
-
+import sys
+import codecs 
 #print (jason['protocol']['title']) # access element in protocol by 
-# add authors 
-# add materials 
+
 
 search_for_protocol = 'PCR'
 
@@ -90,6 +90,8 @@ def write_protocols(protocol_list):
 		f = open(str(count)+ '_' + title + '.txt', 'w') # creates file with unique name 
 		
 		for step in translation:
+			 
+			 step = step.encode('cp1252', 'replace').decode('cp1252') # this fixes bug that brings up UnicodeEncodeError for greek/roman symbol 
 			 f.write(step + '\n') # writes out steps to file
 
 		f.close()
@@ -108,3 +110,4 @@ def main():
 
 main()
 
+ 
