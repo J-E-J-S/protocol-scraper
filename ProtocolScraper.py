@@ -1,12 +1,11 @@
 import requests
 import json
 import re
-import sys
-import codecs 
+ 
 # (jason['protocol']['title']) # access element in protocol by 
 
 
-search_for_protocol = 'PCR'
+search_for_protocol = 'Western Blot'
 
 
 def search_page(string):
@@ -116,9 +115,6 @@ def find_credit(protocol):
 	credit.append(url)
 
 	return credit 
-
-
-
 
 
 def write_protocols(protocol_list):
