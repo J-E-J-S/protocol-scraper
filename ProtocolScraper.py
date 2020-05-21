@@ -3,12 +3,10 @@ import json
 import re
 import sys
 import codecs 
-#print (jason['protocol']['title']) # access element in protocol by 
+# (jason['protocol']['title']) # access element in protocol by 
 
 
 search_for_protocol = 'PCR'
-
-
 
 
 def search_page(string):
@@ -100,6 +98,29 @@ def single_translate_material(protocol):
 
 	return material_list
 
+
+def find_credit(protocol):
+
+	credit = ['Credit:'] # holds information on author, authors' institution and protocol url on protocol.io 
+
+	authors = protocol['protocol']['authors']
+
+	for item in authors:
+		credit.append(item['name']) # finds authors name 
+		
+		if item['affiliation'] != 'null':
+			credit.append(item['affiliation']) # finds authors institution if given 
+
+
+	url = protocol['protocol']['url'] # finds url for protocol on protocol.io 
+	credit.append(url)
+
+	return credit 
+
+
+
+
+
 def write_protocols(protocol_list):
 
 	count = 0 
@@ -107,27 +128,31 @@ def write_protocols(protocol_list):
 		
 		translation = single_translate_steps(protocol_list[count]) # translates protocol object into plain text steps (see single_translate function) + remove spaces
 		material_list = single_translate_material(protocol_list[count])
-		
+		credit_list = find_credit(protocol_list[count])
+
+
+
 		title = material_list[0].replace(' ', '_') # first element in material_list is always title 
 
 		f = open(str(count)+ '_' + title + '.txt', 'w') # creates file with unique name 
 		
 		
 
-		for material in material_list: 
+		for material in material_list: # writes materials section + title 
 			f.write(material + '\n')
 
-		for step in translation:
+		for step in translation: # writes steps 
 			 
 			 step = step.encode('cp1252', 'replace').decode('cp1252') # this fixes bug that brings up UnicodeEncodeError for greek/roman symbol 
 			 f.write(step + '\n') # writes out steps to file
 
+		for item in credit_list:
+			item = item.encode('cp1252', 'replace').decode('cp1252')
+			f.write(item + '\n')
+
 		f.close()
 
 		count += 1
-
-
-
 
 
 
