@@ -1,0 +1,51 @@
+Western Blot
+Materials:
+None
+Steps:
+1. Pull out comb gently and straight, avoid collapsing wells
+2. Follow instructions provided with power pack to set up gelsShort plate facing in on apparatusPress against gasketPress down and close arms simultaneouslyPut unit into bucketIf not using 2 gels, use thick plast plate as the "dummy plate"
+3. Fill inner chamber with 'fresh' 1x running buffer high enough to cover smaller plate and enter wells
+4. Load protein ladder in right most lane*Note: gels are reversed, final product will have ladder on leftmost lane
+5. Load samples with gel-laoding tips at consistent amountTips: avoid bubbles and draw/eject samples slowly
+6. Pour "used" 1x running buffer to fill bucket
+7. Place the lid on the tank with matched colour-coded leads. Run the machine until protein ladder sufficiently separated.
+8. Make 1 L solution in "1x transfer buffer with MeOH" bottle
+9. Put transfer buffer into -20oC freezer #2 (bottom rack)
+10. Fill wide plastic tray with 1x transfer buffer
+11. Soak filter papers (6 in total per cassette) in 1x transfer buffer in tray
+12. Carefully remove gel from between glass plates. Use the green plastic wedge.
+13. Using tweezers, obtain PVDF membrane and place in methanol on rocker. This activates the membrane.
+14. Soak gels in transfer buffer for 5 minutes to equilibrate. Soak sponges as well.
+15. Assemble immunoblot 'sandwich' in following order:Blot cassette with black (cathode) side down2 sponges3 sheets of soaked filter paper (roll out bubbles)Gel (with ladder on the right, dye front on the bottom)With tweezers, place PVDF membrane over gel3 sheets of soaked filter paper (roll out bubbles)2 spongesClose the cassette. Leave the cassette in transfer buffer until all cassettes are assembled
+16. Set up the power pack. Fill the bucket with the transfer buffer (should be about 3/4 full) Put in magnetic stir barPut in ice pack into the bucketEnsure electrodes are in correct placementStart reaction in the cold room. Small bubbles should be seen when the reaction starts
+17. Block reagents and concentration will vary depending on antibodies.Usually 10 mL of block solution per plate.
+18. Place membrane onto plate with tweezers. Add used amido black. Place plate on the rocker for 1 minute.
+19. Draw up excess amido black back into the bottle. Rinse the membrane with distilled water.
+20. Cut the membrane with exacto-knife (if necessary). Take a picture.
+21. Place membrane on rocker with TBS-T to keep the membrane moist.
+22. Remove previous TBS-T. Add block solution and incubate on rocker
+23. Defrost primary antibody solution 5 mins before completion of block incubation
+24. Remove block solution and add primary antibody solution.
+25. Incubate on a rocker within the cold room overnight. Keep the bottle with the membrane for reference purposes.
+26. ---
+27. Remove primary antibody with 10mL pipette. Keep the solution and put it back into its respective tube.
+28. Wash membrane:Add 1x TBS-T to the membrane and incubate on the rocker
+29. Perform wash step 3 times in total
+30. Prepare secondary antibody solution. Diulent and % mass will vary depending on primary antibody used.10 mL solution per plate.Do not contaminate antibodies.
+31. Add secondary antibody to the membrane
+32. Wash membrane:Add 1x TBS-T to the membrane and incubate on the rocker
+33. Perform wash step 3 times in total
+34. Keep membranes in TBS-T but remove from the rocker while preparing the ECL solution.
+35. Set-up the imager.Turn on the computerAutofocus with the Mac card
+36. Clean the square plate with EtOH. Ensure no particular matter
+37. Prepare ECL solution in a black tube. Mix using the pipette.Use different pipette tips to prevent contamination.
+38. Dap off excess TBS-T with KimWipe. Place membrane in square plate. Pipette out some of the ECL solution. In drop-wise fashion, just cover the membrane in the ECL solution.
+39. Place container over the plate to avoid light
+40. Using tweezers, put the membrane on the glass. Place the glass on the 3rd level in the machine in the middle of the tray.
+41. Take preview image to see the ladder. Save the image.
+42. Auto-expose and save the image
+43. Soak membrane in 100% methanol and leave on a KimWipe to dry. Wrap the membrane in plastic wrap and label it.
+Credit:
+Athan Dial
+McMaster University
+https://www.protocols.io/view/western-blot-rh3d38n

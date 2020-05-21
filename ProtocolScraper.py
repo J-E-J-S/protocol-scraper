@@ -2,7 +2,7 @@ import requests
 import json
 import re
  
-# (jason['protocol']['title']) # access element in protocol by 
+# (jason['protocol']['item'])  access element in protocol by 
 
 
 search_for_protocol = 'Type Protocol Here'
@@ -33,12 +33,12 @@ def protocol_ids(jason):
 
 
 def get_protocols(ids):
-
+	''' returns list of protocol objects through api '''
 	base = 'https://www.protocols.io/api/v3/protocols/'
 	protocol_list = [] # holds jason of protocol objects for top 3 relevent protocols
 
 	count = 0 
-	while count < 3:
+	while count < 3: # change this limit to however many files you want to generate
 		
 		number = str(ids[count]) # gets id from list and converts to string for search
 		url = base + number # plugs id into url 
@@ -54,7 +54,7 @@ def get_protocols(ids):
 def single_translate_steps(protocol):
 	''' Takes a protocol object and returns list of steps as strings with title of protocol being first element''' 
 
-	#title = protocol['protocol']['title'] # title of protocol
+	
 	steps = protocol['protocol']['steps'] # steps object of protocol
 
 	step_list = ['Steps:'] # stores cleaned text with title of protocol being first item in list 
@@ -99,7 +99,7 @@ def single_translate_material(protocol):
 
 
 def find_credit(protocol):
-
+	''' finds author credit from protocol object and protocol url '''
 	credit = ['Credit:'] # holds information on author, authors' institution and protocol url on protocol.io 
 
 	authors = protocol['protocol']['authors']
@@ -118,7 +118,7 @@ def find_credit(protocol):
 
 
 def write_protocols(protocol_list):
-
+	''' Writes the protocol information to files''' 
 	count = 0 
 	while count < len(protocol_list): 
 		

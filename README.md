@@ -23,7 +23,7 @@ This is a web scraper using the [Protocols.io API](https://apidoc.protocols.io/)
 search_for_protocol = 'Type protocol here'
 ```
 2. Run the script in an IDE or from the terminal 
- * First navigate to the directory storing the ProtocolScraper.py script, then type 
+ 	* First navigate to the directory storing the ProtocolScraper.py script, then type 
 ``` 
 python ProtocolScraper.py 
 ``` 

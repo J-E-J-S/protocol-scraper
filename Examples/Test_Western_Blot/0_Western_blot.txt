@@ -1,0 +1,38 @@
+Western blot
+Materials:
+* Phosphatase inhibitor PhosSTOP
+* Proteases inhibitor Complete
+* DC protein assay
+* BSA
+* Acrilamide
+* 2-mercaptoethanol
+* APS
+* Bisacrilamide
+* H2O2
+* Iodophenol
+* Glicerol
+* Glycine
+* HCl
+* Luminol
+* PVDF membranes
+* Methanol
+* NaCl
+* TEMED (Tetramethyl-ethulenediamine)
+* SDS
+* Tween-20
+Steps:
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+Credit:
+Laura Ruiz Remolina
+Salamanca University (USAL), Spain
+https://www.protocols.io/view/western-blot-j8bcrsn
