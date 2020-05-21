@@ -54,13 +54,13 @@ def get_protocols(ids):
 	return protocol_list
 
 
-def single_translate(protocol):
+def single_translate_steps(protocol):
 	''' Takes a protocol object and returns list of steps as strings with title of protocol being first element''' 
 
-	title = protocol['protocol']['title'] # title of protocol
+	#title = protocol['protocol']['title'] # title of protocol
 	steps = protocol['protocol']['steps'] # steps object of protocol
 
-	step_list = [title] # stores cleaned text with title of protocol being first item in list 
+	step_list = ['Steps:'] # stores cleaned text with title of protocol being first item in list 
 	for step in steps:
 		step_description = step['components'][1]['source']['description'] # navigates JSON to description which holds html of step text 
 		cleanr = re.compile('<.*?>')
@@ -73,22 +73,45 @@ def single_translate(protocol):
 		step_list[count] = str(count) + '. ' + step_list[count] # adds step number to description but not to title 
 		count += 1 
 
-
-
+	
 	return step_list
 
+
+def single_translate_material(protocol):
+	''' Takes protocol object and returns list of materials for protocol '''
+	
+	title = protocol['protocol']['title'] # title of protocol
+	materials = protocol['protocol']['materials']
+	material_list = [title, 'Materials:']
+
+	for reagent in materials: 
+		material_list.append(reagent['name']) # gets material name + quant. 
+
+	count = 2 
+	while count < len(material_list):
+		material_list[count] = '* ' + material_list[count] # adds bullet point to material description 
+
+		count +=1 
+
+	return material_list
 
 def write_protocols(protocol_list):
 
 	count = 0 
 	while count < len(protocol_list): 
 		
-		translation = single_translate(protocol_list[count]) # translates protocol object into plain text steps (see single_translate function) + remove spaces
-
-		title = translation[0].replace(' ', '_') # first element in single_translation list is always title 
+		translation = single_translate_steps(protocol_list[count]) # translates protocol object into plain text steps (see single_translate function) + remove spaces
+		material_list = single_translate_material(protocol_list[count])
+		
+		title = material_list[0].replace(' ', '_') # first element in material_list is always title 
 
 		f = open(str(count)+ '_' + title + '.txt', 'w') # creates file with unique name 
 		
+		
+
+		for material in material_list: 
+			f.write(material + '\n')
+
 		for step in translation:
 			 
 			 step = step.encode('cp1252', 'replace').decode('cp1252') # this fixes bug that brings up UnicodeEncodeError for greek/roman symbol 
@@ -99,6 +122,10 @@ def write_protocols(protocol_list):
 		count += 1
 
 
+
+
+
+
 def main():
 
 	jason = search_page(search_for_protocol)
@@ -106,8 +133,9 @@ def main():
 	protocol_list = get_protocols(ids)
 	write_protocols(protocol_list)
 
-	
 
-main()
+if __name__ == '__main__':
+
+	main()
 
  

@@ -1,5 +1,0 @@
-PCR
-1. Prepare the PCR reaction mixture following the specifications below:
-2. Perform the amplification in a general thermocycler in the following conditions. Adjust the annealing temperature according to the primers used, and the hotstart to the specifications of your polymerase:
-3. Prepare a 3% agarose gel. Load the samples and perform the electrophoresis at 90V for 50 min.
-4. Remove the gel and observe the bands under UV light.
