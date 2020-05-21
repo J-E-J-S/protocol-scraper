@@ -6,6 +6,11 @@ import re
 # add authors 
 # add materials 
 
+search_for_protocol = 'PCR'
+
+
+
+
 def search_page(string):
 	'''given search string will return jason format of the search page for that string'''
 
@@ -94,7 +99,7 @@ def write_protocols(protocol_list):
 
 def main():
 
-	jason = search_page('gel electrophoresis')
+	jason = search_page(search_for_protocol)
 	ids = protocol_ids(jason)
 	protocol_list = get_protocols(ids)
 	write_protocols(protocol_list)
