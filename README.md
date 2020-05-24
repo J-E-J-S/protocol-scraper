@@ -56,3 +56,5 @@ def get_protcols(ids:)
 * In the 'while count < 3', change the 3 to however many different protocol versions you want to generate (+1) 	
 	* you will find this on line 41 
 * For obscure protocols, sometimes its neccessary to generate more than 3 protocol files to find one that fits your criteria
+
+**NOTE**: The script will return an error if you try and generate more protocols than there are targets on the site 
