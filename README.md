@@ -30,4 +30,4 @@ python ProtocolScraper.py
 3. The script will generate 3 text files. Find the one with the best written protocol and stylise as desired. 
 	* If some information is missing, following the url at the bottom of the file to see if you can fill in the details
 
-Note: There is currently a codec error in translating some scientific symbols - see at bottom of generated file to fill these in. 
+Note: There is currently a codec error in translating some scientific symbols - see URL at bottom of the generated file to fill these in. 
