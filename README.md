@@ -31,3 +31,28 @@ python ProtocolScraper.py
 	* If some information is missing, following the url at the bottom of the file to see if you can fill in the details
 
 Note: There is currently a codec error in translating some scientific symbols - see URL at bottom of the generated file to fill these in. 
+
+**HOW DO I GENERATE MORE FILES?:**
+* Easy, in the python file find the 'get_protocols' function
+```
+def get_protcols(ids:)
+ 
+	base = 'https://www.protocols.io/api/v3/protocols/'
+	protocol_list = [] 
+
+	count = 0 
+	while count < 3: # CHANGE THIS to however many files you want to generate
+		
+		number = str(ids[count]) # gets id from list and converts to string for search
+		url = base + number 
+		r = requests.get(url) 
+		jason = r.json() 
+		protocol_list.append(jason) 
+
+		count += 1 
+
+	return protocol_list
+```
+* In the 'while count < 3', change the 3 to however many different protocol versions you want to generate (+1) 	
+	* you will find this on line 41 
+* For obscure protocols, sometimes its neccessary to generate more than 3 protocol files to find one that fits your criteria
