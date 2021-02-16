@@ -45,7 +45,7 @@ Steps:
 41. Take preview image to see the ladder. Save the image.
 42. Auto-expose and save the image
 43. Soak membrane in 100% methanol and leave on a KimWipe to dry. Wrap the membrane in plastic wrap and label it.
-Credit:
+Reference:
 Athan Dial
 McMaster University
 https://www.protocols.io/view/western-blot-rh3d38n

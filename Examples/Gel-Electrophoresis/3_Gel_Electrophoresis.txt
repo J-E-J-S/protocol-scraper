@@ -22,7 +22,7 @@ Steps:
 14. Let run for 30 minutes or until the loading dye has sufficiently moved. 
 15. Remove gel from gel tray after draining excess TAE Buffer and place on plastic wrap.
 16. Place gel with plastic wrap on UV lamp to view bands, or store in the plastic wrap at +4 C for later use.
-Credit:
+Reference:
 Alan J. Cone
 Wright State University
 https://www.protocols.io/view/Gel-Electrophoresis-ey3bfyn

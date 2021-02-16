@@ -21,7 +21,7 @@ Steps:
 17. Place gel in imaging machine.
 18. Turn on the machine by the switch on left side of machine. Press 'Trans UV'.
 19. Take a picture with the camera.
-Credit:
+Reference:
 Kenneth Schackart
 University of Arizona
 https://www.protocols.io/view/gel-electrophoresis-yvxfw7n

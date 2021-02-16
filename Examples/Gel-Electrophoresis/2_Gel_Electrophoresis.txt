@@ -23,5 +23,5 @@ Steps:
 15. Place gel into a bin with 1% Ethidium Bromide, ensuring the solution does not come into contact with skin. Clean all surfaces that may have come in contact with ethidium bromide, place gloves in a bin labelled "Ethidium Bromide", and wash hands repeatedly afterwards. Let gel sit for 15 minutes. 
 16. Carefully removing the gel, to avoid splashes, place on top of a UV light source with a camera. In as short a time as is possible, turn on the UV light to capture a photograph of the gel.
 17. Remove band if purifying DNA. Otherwise, carefully dispose of the gel into a wastebin labelled "Ethidium Bromide."
-Credit:
+Reference:
 https://www.protocols.io/view/Gel-Electrophoresis-dqa5sd

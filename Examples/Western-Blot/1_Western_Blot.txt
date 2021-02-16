@@ -1,0 +1,32 @@
+Western Blot
+Materials:
+* RIPA Buffer
+* Protease Inhibitor Cocktail Set X EDTA-Free
+* Phosphatase Inhibitor Cocktail Set I
+Steps:
+1. Extract total cellular proteins using RIPA buffer containing protease and phosphatase inhibitors. 
+2. Perform SDS-polyacrylamide gel electrophoresis with 50mg total cellular proteins per lane using a 4%–12% gradient Tris?glycine gel. 
+3. Perform western blot using the Quantitative Western Blot System (LI?COR Biosciences). Primary antibodies are listed in the "Guidelines". Use secondary antibodies labeled with IR dyes. 
+4. Quantify protein levels using Odyssey IR Imaging System (LI?COR Biosciences).
+Reference:
+Yingchao Xue
+Department of Immunology, Research Center on Pediatric Development and Diseases, Institute of Basic Medical Sciences, Chinese Academy of Medical Sciences and School of Basic Medicine, Peking Union Medical College, State Key Laboratory of Medical Molecular Biology; Hugo W. Moser Research Institute at Kennedy Krieger
+Xiping Zhan
+Department of Physiology and Biophysics, Howard University
+Shisheng Sun
+College of Life Sciences, Northwest University
+Senthilkumar S. Karuppagounder
+Department of Neurology, Johns Hopkins University School of Medicine; Neuroregeneration and Stem Cell Programs, Institute for Cell Engineering, Johns Hopkins University School of Medicine; Adrienne Helis Malvin Medical Research Foundation
+Shuli Xia
+Hugo W. Moser Research Institute at Kennedy Krieger; Department of Neurology, Johns Hopkins University School of Medicine
+Valina L Dawson
+Department of Neurology, Johns Hopkins University School of Medicine; Neuroregeneration and Stem Cell Programs, Institute for Cell Engineering, Johns Hopkins University School of Medicine; Adrienne Helis Malvin Medical Research Foundation; Department of Neuroscience, Johns Hopkins University School of Medicine; Department of Physiology, Johns Hopkins University School of Medicine
+Ted M Dawson
+Department of Neurology, Johns Hopkins University School of Medicine; Neuroregeneration and Stem Cell Programs, Institute for Cell Engineering, Johns Hopkins University School of Medicine; Adrienne Helis Malvin Medical Research Foundation; Department of Neuroscience, Johns Hopkins University School of Medicine; Department of Pharmacology and Molecular Sciences, Johns Hopkins University School of Medicine
+John Laterra
+Hugo W. Moser Research Institute at Kennedy Krieger; Department of Neurology, Johns Hopkins University School of Medicine; Department of Neuroscience, Johns Hopkins University School of Medicine; Department of Oncology, Johns Hopkins University School of Medicine
+Jianmin Zhang
+Department of Immunology, Research Center on Pediatric Development and Diseases, Institute of Basic Medical Sciences, Chinese Academy of Medical Sciences and School of Basic Medicine, Peking Union Medical College, State Key Laboratory of Medical Molecular Biology
+Mingyao Ying
+Hugo W. Moser Research Institute at Kennedy Krieger; Department of Neurology, Johns Hopkins University School of Medicine
+https://www.protocols.io/view/western-blot-9u9h6z6
