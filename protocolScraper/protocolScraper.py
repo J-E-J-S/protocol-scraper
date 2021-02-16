@@ -23,14 +23,14 @@ def protocol_ids(jason):
 
 	return ids
 
-def get_protocols(ids):
+def get_protocols(ids, limit):
 	''' Returns list of protocol objects through api '''
 
 	base = 'https://www.protocols.io/api/v3/protocols/'
 	protocol_list = [] # holds jason of protocol objects for top 3 relevent protocols
 
 	count = 0
-	while count < 3: # CHANGE THIS limit to however many files you want to generate
+	while count < limit: # CHANGE THIS limit to however many files you want to generate
 		number = str(ids[count]) # gets id from list and converts to string for search
 		url = base + number # plugs id into url
 		r = requests.get(url) # request api
@@ -106,7 +106,7 @@ def write_protocols(protocol_list):
 		credit_list = find_credit(protocol_list[count])
 		title = material_list[0].replace(' ', '_') # first element in material_list is always title
 
-		f = open(str(count)+ '_' + title + '.txt', 'w') # creates file with unique name
+		f = open(str(count+1)+ '_' + title + '.txt', 'w') # creates file with unique name
 
 		for material in material_list: # writes materials section + title
 			f.write(material + '\n')
@@ -122,21 +122,24 @@ def write_protocols(protocol_list):
 		f.close()
 		count += 1
 
-		return
 
 @click.command()
 @click.argument('protocol')
-def cli(protocol):
+@click.option('-l', '--limit', default = 3, type=int, help='Number of test protocols to write. Default = 3' )
+def cli(protocol, limit):
 
 	"""Arguments:\n
-    PROTOCOL The protocol to scrape for.
+    PROTOCOL The protocol to write.
     """
 
+	click.echo('Accessing protocols.io API.')
 	jason = search_page(protocol)
 	ids = protocol_ids(jason)
-	protocol_list = get_protocols(ids)
+	protocol_list = get_protocols(ids, limit)
+	click.echo('Writing Protocols.')
 	write_protocols(protocol_list)
-
+	click.echo('Protocol Generation Complete.')
+	click.echo(str(len(protocol_list)) + ' Protocols Written.')
 
 if __name__ == '__main__':
 	cli()
