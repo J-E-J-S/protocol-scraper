@@ -1,6 +1,8 @@
 ## Protocol Scraper ⚗️  
 ### A Python CLI that Automates Protocol Writing.
 
+![](/assets/protocol-scraper.gif)
+
 ### Introduction  
 This CLI scrapes protocols from [Protocols.io API](https://apidoc.protocols.io/) to automate protocol collection and writing.  
 Specify the number of protocols you want to scrape and analyze the generated .txt files to select the best protocol for your needs.  
