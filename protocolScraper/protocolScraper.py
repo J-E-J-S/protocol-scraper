@@ -36,6 +36,7 @@ def get_protocols(ids, limit):
 		r = requests.get(url) # request api
 		jason = r.json() # converts json
 		protocol_list.append(jason)
+		click.echo('Gathered Protocol ' + str(count+1) + '.' )
 		count += 1
 
 	return protocol_list
@@ -131,12 +132,12 @@ def cli(protocol, limit):
 	"""Arguments:\n
     PROTOCOL The protocol to write.
     """
-
+	
 	click.echo('Accessing protocols.io API.')
 	jason = search_page(protocol)
 	ids = protocol_ids(jason)
 	protocol_list = get_protocols(ids, limit)
-	click.echo('Writing Protocols.')
+	click.echo('Writing Protocols...')
 	write_protocols(protocol_list)
 	click.echo('Protocol Generation Complete.')
 	click.echo(str(len(protocol_list)) + ' Protocols Written.')
