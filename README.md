@@ -26,8 +26,13 @@ Options:
   -l, --limit INTEGER  Number of test protocols to write. Default = 3
   --help               Show this message and exit.
 ```
+e.g.
+```
+protocol-scraper 'Gel Electrophoresis' -l 10
+```
 
 ### Output:
-The CLI will output .txt files containing the scraped protocols to the limit specified.  
+The CLI will output .txt files containing the scraped protocols to the limit specified.
+See Examples directory for more insight.  
 
 **NOTE**: The script will return an error if you try and generate more protocols than there are targets on the site
