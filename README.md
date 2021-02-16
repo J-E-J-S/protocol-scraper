@@ -1,5 +1,5 @@
 ## Protocol Scraper ⚗️  
-### A Python CLI that Automates Protocol Writing.
+### A Python CLI that Automates Scientific Protocol Writing.
 
 ![](/assets/protocol-scraper.gif)
 
