@@ -15,7 +15,7 @@ setup(
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
         install_requires=[
-            'requests==2.7.0',
+            'requests==2.20.0',
             'click==7.1.2'
         ],
         entry_points = {
