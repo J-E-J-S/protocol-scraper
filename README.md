@@ -27,5 +27,7 @@ Options:
   --help               Show this message and exit.
 ```
 
+### Output:
+The CLI will output .txt files containing the scraped protocols to the limit specified.  
 
 **NOTE**: The script will return an error if you try and generate more protocols than there are targets on the site
