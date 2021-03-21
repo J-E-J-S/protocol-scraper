@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '1.1'
+VERSION = '1.2'
 DESCRIPTION = 'Python CLI for automatically writing protocols.'
 LONG_DESCRIPTION = 'This package contains a CLI that scrapes protocol.io to write detailed protocols for a given search.'
 

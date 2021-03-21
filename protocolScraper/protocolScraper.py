@@ -31,9 +31,12 @@ def get_protocols(ids, limit):
 
 	count = 0
 	while count < limit: # CHANGE THIS limit to however many files you want to generate
-		number = str(ids[count]) # gets id from list and converts to string for search
-		url = base + number # plugs id into url
-		r = requests.get(url) # request api
+		try:
+			number = str(ids[count]) # gets id from list and converts to string for search
+			url = base + number # plugs id into url
+			r = requests.get(url) # request api
+		except:
+			return protocol_list
 		jason = r.json() # converts json
 		protocol_list.append(jason)
 		click.echo('Collected Protocol ' + str(count+1) + '.' )
@@ -110,6 +113,7 @@ def write_protocols(protocol_list):
 		f = open(str(count+1)+ '_' + title + '.txt', 'w') # creates file with unique name
 
 		for material in material_list: # writes materials section + title
+			material = material.encode('cp1252', 'replace').decode('cp1252')
 			f.write(material + '\n')
 
 		for step in translation: # writes steps
@@ -117,7 +121,10 @@ def write_protocols(protocol_list):
 			 f.write(step + '\n') # writes out steps to file
 
 		for item in credit_list:
-			item = item.encode('cp1252', 'replace').decode('cp1252')
+			try:
+				item = item.encode('cp1252', 'replace').decode('cp1252')
+			except:
+				continue
 			f.write(item + '\n')
 
 		f.close()
